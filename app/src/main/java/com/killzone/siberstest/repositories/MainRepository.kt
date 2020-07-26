@@ -23,7 +23,7 @@ class MainRepository @Inject constructor(
 ) {
 
     // Return first initial PokemonList
-    suspend fun getPokemonList(): Result<PokemonList> = withContext(Dispatchers.IO) {
+    s/*uspend fun getPokemonList(): Result<PokemonList> = withContext(Dispatchers.IO) {
         try {
             val list = networkService.getPokemons()
             return@withContext Result.Success(list)
@@ -64,7 +64,7 @@ class MainRepository @Inject constructor(
     suspend fun getCachedPokemons(): List<Pokemon> = withContext(Dispatchers.IO){
         return@withContext dbService.getAllPokemons()
     }
-
+*/
     // Returns PokemonList with random url
     suspend fun getRandomPokemonList(): Result<PokemonList> = withContext(Dispatchers.IO) {
         try {
